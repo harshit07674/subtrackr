@@ -1,0 +1,1527 @@
+[
+  {
+    "id": "netflix",
+    "serviceName": "Netflix",
+    "category": "Entertainment & Streaming",
+    "brandColor": "#E50914",
+    "logoIcon": "Film",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "netflix-mobile",
+        "planName": "Mobile Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 6.99,
+          "EUR": 4.99,
+          "GBP": 4.99,
+          "INR": 149,
+          "AUD": 7.99,
+          "CAD": 5.99,
+          "JPY": 790
+        },
+        "notes": "1 SD phone/tablet screen streaming"
+      },
+      {
+        "planId": "netflix-basic",
+        "planName": "Basic Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 9.99,
+          "EUR": 8.99,
+          "GBP": 6.99,
+          "INR": 199,
+          "AUD": 10.99,
+          "CAD": 9.99,
+          "JPY": 990
+        },
+        "notes": "720p HD 1 screen streaming"
+      },
+      {
+        "planId": "netflix-standard",
+        "planName": "Standard Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 15.49,
+          "EUR": 13.99,
+          "GBP": 10.99,
+          "INR": 499,
+          "AUD": 18.99,
+          "CAD": 16.49,
+          "JPY": 1490
+        },
+        "notes": "1080p Full HD 2 screen streaming"
+      },
+      {
+        "planId": "netflix-premium",
+        "planName": "Premium 4K Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 22.99,
+          "EUR": 19.99,
+          "GBP": 17.99,
+          "INR": 649,
+          "AUD": 25.99,
+          "CAD": 20.99,
+          "JPY": 1980
+        },
+        "notes": "4K Ultra HD + HDR 4 screens streaming"
+      }
+    ]
+  },
+  {
+    "id": "spotify",
+    "serviceName": "Spotify",
+    "category": "Entertainment & Streaming",
+    "brandColor": "#1DB954",
+    "logoIcon": "Music",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "spotify-student",
+        "planName": "Student Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 5.99,
+          "EUR": 5.99,
+          "GBP": 5.99,
+          "INR": 59,
+          "AUD": 6.99,
+          "CAD": 5.99,
+          "JPY": 480
+        },
+        "notes": "Discounted Premium for eligible students"
+      },
+      {
+        "planId": "spotify-individual-m",
+        "planName": "Individual Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 11.99,
+          "EUR": 10.99,
+          "GBP": 11.99,
+          "INR": 119,
+          "AUD": 13.99,
+          "CAD": 10.99,
+          "JPY": 980
+        },
+        "notes": "1 Premium account ad-free streaming"
+      },
+      {
+        "planId": "spotify-individual-y",
+        "planName": "Individual Plan (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 119.99,
+          "EUR": 109.99,
+          "GBP": 119.99,
+          "INR": 1189,
+          "AUD": 139.99,
+          "CAD": 109.99,
+          "JPY": 9800
+        },
+        "notes": "Annual subscription discount for 1 account"
+      },
+      {
+        "planId": "spotify-duo",
+        "planName": "Duo Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 14.99,
+          "EUR": 14.99,
+          "GBP": 14.99,
+          "INR": 149,
+          "AUD": 17.99,
+          "CAD": 14.99,
+          "JPY": 1280
+        },
+        "notes": "2 Premium accounts for couples under 1 roof"
+      },
+      {
+        "planId": "spotify-family",
+        "planName": "Family Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 16.99,
+          "EUR": 17.99,
+          "GBP": 17.99,
+          "INR": 179,
+          "AUD": 20.99,
+          "CAD": 16.99,
+          "JPY": 1580
+        },
+        "notes": "Up to 6 Premium accounts for family members"
+      }
+    ]
+  },
+  {
+    "id": "chatgpt",
+    "serviceName": "ChatGPT / OpenAI",
+    "category": "AI & Automation",
+    "brandColor": "#10A37F",
+    "logoIcon": "Bot",
+    "supportsUsageTracking": true,
+    "plans": [
+      {
+        "planId": "chatgpt-plus",
+        "planName": "Plus Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 20,
+          "EUR": 22,
+          "GBP": 18,
+          "INR": 1999,
+          "AUD": 31,
+          "CAD": 27,
+          "JPY": 3000
+        },
+        "notes": "GPT-4o, DALL-E 3 & priority reasoning access"
+      },
+      {
+        "planId": "chatgpt-team",
+        "planName": "Team Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 25,
+          "EUR": 28,
+          "GBP": 23,
+          "INR": 2500,
+          "AUD": 38,
+          "CAD": 34,
+          "JPY": 3800
+        },
+        "notes": "Higher message caps & workspace admin controls"
+      },
+      {
+        "planId": "chatgpt-pro",
+        "planName": "Pro Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 200,
+          "EUR": 220,
+          "GBP": 180,
+          "INR": 19990,
+          "AUD": 310,
+          "CAD": 270,
+          "JPY": 30000
+        },
+        "notes": "Unlimited GPT-4o & o1 pro mode reasoning model"
+      }
+    ]
+  },
+  {
+    "id": "claude",
+    "serviceName": "Claude / Anthropic",
+    "category": "AI & Automation",
+    "brandColor": "#D97706",
+    "logoIcon": "Sparkles",
+    "supportsUsageTracking": true,
+    "plans": [
+      {
+        "planId": "claude-pro",
+        "planName": "Pro Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 20,
+          "EUR": 22,
+          "GBP": 18,
+          "INR": 1999,
+          "AUD": 31,
+          "CAD": 27,
+          "JPY": 3000
+        },
+        "notes": "5x usage for Claude 3.5 Sonnet & Projects"
+      },
+      {
+        "planId": "claude-team",
+        "planName": "Team Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 30,
+          "EUR": 33,
+          "GBP": 27,
+          "INR": 2999,
+          "AUD": 46,
+          "CAD": 40,
+          "JPY": 4500
+        },
+        "notes": "Higher usage limits & team collaboration features"
+      }
+    ]
+  },
+  {
+    "id": "github",
+    "serviceName": "GitHub",
+    "category": "Developer Tools & Cloud",
+    "brandColor": "#24292F",
+    "logoIcon": "GitBranch",
+    "supportsUsageTracking": true,
+    "plans": [
+      {
+        "planId": "github-copilot-ind-m",
+        "planName": "Copilot Individual (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 10,
+          "EUR": 10,
+          "GBP": 8,
+          "INR": 850,
+          "AUD": 15,
+          "CAD": 13.5,
+          "JPY": 1500
+        },
+        "notes": "AI code completions & chat in IDE"
+      },
+      {
+        "planId": "github-copilot-ind-y",
+        "planName": "Copilot Individual (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 100,
+          "EUR": 100,
+          "GBP": 80,
+          "INR": 8500,
+          "AUD": 150,
+          "CAD": 135,
+          "JPY": 15000
+        },
+        "notes": "Annual Copilot subscription with 2 months free"
+      },
+      {
+        "planId": "github-pro-m",
+        "planName": "GitHub Pro (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 4,
+          "EUR": 4,
+          "GBP": 3.2,
+          "INR": 340,
+          "AUD": 6,
+          "CAD": 5.5,
+          "JPY": 600
+        },
+        "notes": "3,000 Actions mins/mo & 2GB Packages storage"
+      },
+      {
+        "planId": "github-pro-y",
+        "planName": "GitHub Pro (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 40,
+          "EUR": 40,
+          "GBP": 32,
+          "INR": 3400,
+          "AUD": 60,
+          "CAD": 55,
+          "JPY": 6000
+        },
+        "notes": "Discounted annual Pro developer account"
+      },
+      {
+        "planId": "github-copilot-biz",
+        "planName": "Copilot Business (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 19,
+          "EUR": 19,
+          "GBP": 15,
+          "INR": 1600,
+          "AUD": 28,
+          "CAD": 25.5,
+          "JPY": 2800
+        },
+        "notes": "Copilot for organization teams & management"
+      }
+    ]
+  },
+  {
+    "id": "youtube-premium",
+    "serviceName": "YouTube Premium",
+    "category": "Entertainment & Streaming",
+    "brandColor": "#FF0000",
+    "logoIcon": "Play",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "youtube-student",
+        "planName": "Student Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 7.99,
+          "EUR": 6.99,
+          "GBP": 6.99,
+          "INR": 79,
+          "AUD": 8.99,
+          "CAD": 7.99,
+          "JPY": 680
+        },
+        "notes": "Discounted ad-free YouTube & Music for students"
+      },
+      {
+        "planId": "youtube-ind-m",
+        "planName": "Individual (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 13.99,
+          "EUR": 12.99,
+          "GBP": 12.99,
+          "INR": 149,
+          "AUD": 16.99,
+          "CAD": 13.99,
+          "JPY": 1280
+        },
+        "notes": "Ad-free videos, background play & YouTube Music"
+      },
+      {
+        "planId": "youtube-ind-y",
+        "planName": "Individual (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 139.99,
+          "EUR": 129.99,
+          "GBP": 129.99,
+          "INR": 1490,
+          "AUD": 169.99,
+          "CAD": 139.99,
+          "JPY": 12800
+        },
+        "notes": "Annual prepay plan for individual users"
+      },
+      {
+        "planId": "youtube-family",
+        "planName": "Family Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 22.99,
+          "EUR": 23.99,
+          "GBP": 19.99,
+          "INR": 299,
+          "AUD": 32.99,
+          "CAD": 22.99,
+          "JPY": 2280
+        },
+        "notes": "Up to 5 family members in same household"
+      }
+    ]
+  },
+  {
+    "id": "google-one",
+    "serviceName": "Google One",
+    "category": "Productivity & Work",
+    "brandColor": "#4285F4",
+    "logoIcon": "Cloud",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "google-one-100gb-m",
+        "planName": "Basic 100GB (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 1.99,
+          "EUR": 1.99,
+          "GBP": 1.59,
+          "INR": 130,
+          "AUD": 2.49,
+          "CAD": 2.79,
+          "JPY": 250
+        },
+        "notes": "100GB storage for Drive, Gmail & Photos"
+      },
+      {
+        "planId": "google-one-100gb-y",
+        "planName": "Basic 100GB (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 19.99,
+          "EUR": 19.99,
+          "GBP": 15.99,
+          "INR": 1300,
+          "AUD": 24.99,
+          "CAD": 27.99,
+          "JPY": 2500
+        },
+        "notes": "Annual plan with 16% savings"
+      },
+      {
+        "planId": "google-one-200gb-m",
+        "planName": "Standard 200GB (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 2.99,
+          "EUR": 2.99,
+          "GBP": 2.49,
+          "INR": 210,
+          "AUD": 4.39,
+          "CAD": 3.99,
+          "JPY": 380
+        },
+        "notes": "200GB cloud storage & 3% store credit"
+      },
+      {
+        "planId": "google-one-200gb-y",
+        "planName": "Standard 200GB (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 29.99,
+          "EUR": 29.99,
+          "GBP": 24.99,
+          "INR": 2100,
+          "AUD": 43.99,
+          "CAD": 39.99,
+          "JPY": 3800
+        },
+        "notes": "Annual 200GB storage plan"
+      },
+      {
+        "planId": "google-one-2tb-m",
+        "planName": "Premium 2TB (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 9.99,
+          "EUR": 9.99,
+          "GBP": 7.99,
+          "INR": 650,
+          "AUD": 12.49,
+          "CAD": 12.49,
+          "JPY": 1300
+        },
+        "notes": "2TB storage + 10% Google Store cashback"
+      },
+      {
+        "planId": "google-one-2tb-y",
+        "planName": "Premium 2TB (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 99.99,
+          "EUR": 99.99,
+          "GBP": 79.99,
+          "INR": 6500,
+          "AUD": 124.99,
+          "CAD": 124.99,
+          "JPY": 13000
+        },
+        "notes": "Annual 2TB cloud storage plan"
+      },
+      {
+        "planId": "google-one-ai-2tb",
+        "planName": "AI Premium 2TB (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 19.99,
+          "EUR": 21.99,
+          "GBP": 18.99,
+          "INR": 1950,
+          "AUD": 31.99,
+          "CAD": 26.99,
+          "JPY": 2900
+        },
+        "notes": "2TB storage + Gemini Advanced & Gemini in Docs"
+      }
+    ]
+  },
+  {
+    "id": "aws",
+    "serviceName": "Amazon Web Services (AWS)",
+    "category": "Developer Tools & Cloud",
+    "brandColor": "#FF9900",
+    "logoIcon": "Server",
+    "supportsUsageTracking": true,
+    "plans": [
+      {
+        "planId": "aws-developer",
+        "planName": "Developer Support Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 29,
+          "EUR": 27,
+          "GBP": 23,
+          "INR": 2400,
+          "AUD": 44,
+          "CAD": 39,
+          "JPY": 4400
+        },
+        "notes": "Technical support & CloudWatch infrastructure monitoring"
+      },
+      {
+        "planId": "aws-business",
+        "planName": "Business Support Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 100,
+          "EUR": 92,
+          "GBP": 78,
+          "INR": 8300,
+          "AUD": 150,
+          "CAD": 136,
+          "JPY": 15000
+        },
+        "notes": "24/7 technical support & architectural guidance"
+      }
+    ]
+  },
+  {
+    "id": "adobe-cc",
+    "serviceName": "Adobe Creative Cloud",
+    "category": "Design & Creative",
+    "brandColor": "#FF0000",
+    "logoIcon": "Palette",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "adobe-photography",
+        "planName": "Photography Plan 20GB",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 9.99,
+          "EUR": 11.99,
+          "GBP": 9.98,
+          "INR": 799,
+          "AUD": 14.29,
+          "CAD": 12.99,
+          "JPY": 1078
+        },
+        "notes": "Photoshop, Lightroom & 20GB cloud storage"
+      },
+      {
+        "planId": "adobe-single-app",
+        "planName": "Single App Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 22.99,
+          "EUR": 26.39,
+          "GBP": 21.98,
+          "INR": 1780,
+          "AUD": 36.99,
+          "CAD": 31.49,
+          "JPY": 2728
+        },
+        "notes": "Pick 1 app (e.g. Premiere Pro, Illustrator, Photoshop)"
+      },
+      {
+        "planId": "adobe-all-apps-m",
+        "planName": "All Apps Individual (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 54.99,
+          "EUR": 62.99,
+          "GBP": 51.98,
+          "INR": 4230,
+          "AUD": 87.99,
+          "CAD": 74.99,
+          "JPY": 6480
+        },
+        "notes": "Full suite of 20+ creative apps & 100GB cloud storage"
+      },
+      {
+        "planId": "adobe-all-apps-y",
+        "planName": "All Apps Individual (Yearly Pre-paid)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 599.88,
+          "EUR": 689.99,
+          "GBP": 569,
+          "INR": 46500,
+          "AUD": 959,
+          "CAD": 819,
+          "JPY": 71000
+        },
+        "notes": "Prepaid annual subscription for complete Creative Cloud"
+      },
+      {
+        "planId": "adobe-student",
+        "planName": "All Apps Student / Teacher",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 19.99,
+          "EUR": 19.99,
+          "GBP": 16.24,
+          "INR": 1596,
+          "AUD": 21.99,
+          "CAD": 26.99,
+          "JPY": 2178
+        },
+        "notes": "Over 60% discount for qualified students & teachers"
+      }
+    ]
+  },
+  {
+    "id": "figma",
+    "serviceName": "Figma",
+    "category": "Design & Creative",
+    "brandColor": "#F24E1E",
+    "logoIcon": "Layout",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "figma-pro-m",
+        "planName": "Professional (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 15,
+          "EUR": 14,
+          "GBP": 12,
+          "INR": 1250,
+          "AUD": 22,
+          "CAD": 20,
+          "JPY": 2200
+        },
+        "notes": "Unlimited team files, design systems & Dev Mode"
+      },
+      {
+        "planId": "figma-pro-y",
+        "planName": "Professional (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 144,
+          "EUR": 144,
+          "GBP": 120,
+          "INR": 12000,
+          "AUD": 216,
+          "CAD": 192,
+          "JPY": 21600
+        },
+        "notes": "Annual billing at $12/mo equivalent"
+      },
+      {
+        "planId": "figma-org",
+        "planName": "Organization Plan (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 540,
+          "EUR": 540,
+          "GBP": 450,
+          "INR": 45000,
+          "AUD": 810,
+          "CAD": 720,
+          "JPY": 81000
+        },
+        "notes": "Organization-wide design systems & admin analytics"
+      }
+    ]
+  },
+  {
+    "id": "microsoft-365",
+    "serviceName": "Microsoft 365",
+    "category": "Productivity & Work",
+    "brandColor": "#D83B01",
+    "logoIcon": "FileText",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "m365-personal-m",
+        "planName": "Personal (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 6.99,
+          "EUR": 7,
+          "GBP": 5.99,
+          "INR": 489,
+          "AUD": 10,
+          "CAD": 8.99,
+          "JPY": 1284
+        },
+        "notes": "Word, Excel, PowerPoint & 1TB OneDrive (1 user)"
+      },
+      {
+        "planId": "m365-personal-y",
+        "planName": "Personal (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 69.99,
+          "EUR": 69,
+          "GBP": 59.99,
+          "INR": 4899,
+          "AUD": 99,
+          "CAD": 89,
+          "JPY": 12840
+        },
+        "notes": "Annual plan for 1 person"
+      },
+      {
+        "planId": "m365-family-m",
+        "planName": "Family (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 9.99,
+          "EUR": 10,
+          "GBP": 7.99,
+          "INR": 619,
+          "AUD": 13,
+          "CAD": 11.99,
+          "JPY": 1850
+        },
+        "notes": "Up to 6 people (6TB total OneDrive storage)"
+      },
+      {
+        "planId": "m365-family-y",
+        "planName": "Family (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 99.99,
+          "EUR": 99,
+          "GBP": 79.99,
+          "INR": 6199,
+          "AUD": 129,
+          "CAD": 119,
+          "JPY": 18500
+        },
+        "notes": "Annual 6-user family subscription"
+      }
+    ]
+  },
+  {
+    "id": "notion",
+    "serviceName": "Notion",
+    "category": "Productivity & Work",
+    "brandColor": "#000000",
+    "logoIcon": "BookOpen",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "notion-plus-m",
+        "planName": "Plus Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 10,
+          "EUR": 9.5,
+          "GBP": 8,
+          "INR": 820,
+          "AUD": 15,
+          "CAD": 13.5,
+          "JPY": 1500
+        },
+        "notes": "Unlimited blocks, 5MB file uploads & 30-day page history"
+      },
+      {
+        "planId": "notion-plus-y",
+        "planName": "Plus Plan (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 96,
+          "EUR": 90,
+          "GBP": 76,
+          "INR": 7900,
+          "AUD": 144,
+          "CAD": 130,
+          "JPY": 14400
+        },
+        "notes": "Annual billing ($8/mo equivalent)"
+      },
+      {
+        "planId": "notion-biz-m",
+        "planName": "Business Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 18,
+          "EUR": 17,
+          "GBP": 14.5,
+          "INR": 1480,
+          "AUD": 27,
+          "CAD": 24.5,
+          "JPY": 2700
+        },
+        "notes": "SAML SSO, private team spaces & 90-day page history"
+      },
+      {
+        "planId": "notion-biz-y",
+        "planName": "Business Plan (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 180,
+          "EUR": 168,
+          "GBP": 144,
+          "INR": 14800,
+          "AUD": 270,
+          "CAD": 245,
+          "JPY": 27000
+        },
+        "notes": "Annual billing for Business plan ($15/mo equivalent)"
+      }
+    ]
+  },
+  {
+    "id": "disney-plus",
+    "serviceName": "Disney+",
+    "category": "Entertainment & Streaming",
+    "brandColor": "#113CCF",
+    "logoIcon": "Tv",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "disney-basic",
+        "planName": "Basic (With Ads)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 7.99,
+          "EUR": 5.99,
+          "GBP": 4.99,
+          "INR": 149,
+          "AUD": 7.99,
+          "CAD": 7.99,
+          "JPY": 790
+        },
+        "notes": "Stream Disney, Marvel & Star Wars with ads"
+      },
+      {
+        "planId": "disney-premium-m",
+        "planName": "Premium Ad-Free (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 13.99,
+          "EUR": 11.99,
+          "GBP": 10.99,
+          "INR": 299,
+          "AUD": 13.99,
+          "CAD": 11.99,
+          "JPY": 990
+        },
+        "notes": "Ad-free streaming + 4K UHD & Dolby Atmos"
+      },
+      {
+        "planId": "disney-premium-y",
+        "planName": "Premium Ad-Free (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 139.99,
+          "EUR": 119.9,
+          "GBP": 109.9,
+          "INR": 1499,
+          "AUD": 139.99,
+          "CAD": 119.99,
+          "JPY": 9900
+        },
+        "notes": "Annual subscription for Premium Ad-Free"
+      }
+    ]
+  },
+  {
+    "id": "apple-music",
+    "serviceName": "Apple Music",
+    "category": "Entertainment & Streaming",
+    "brandColor": "#FA243C",
+    "logoIcon": "Disc",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "apple-music-student",
+        "planName": "Student Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 5.99,
+          "EUR": 5.99,
+          "GBP": 5.99,
+          "INR": 59,
+          "AUD": 6.99,
+          "CAD": 5.99,
+          "JPY": 580
+        },
+        "notes": "Discounted Apple Music + Apple TV+ for students"
+      },
+      {
+        "planId": "apple-music-ind-m",
+        "planName": "Individual (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 10.99,
+          "EUR": 10.99,
+          "GBP": 10.99,
+          "INR": 99,
+          "AUD": 12.99,
+          "CAD": 10.99,
+          "JPY": 1080
+        },
+        "notes": "Ad-free 100M+ songs with Lossless Audio"
+      },
+      {
+        "planId": "apple-music-ind-y",
+        "planName": "Individual (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 109,
+          "EUR": 109,
+          "GBP": 109,
+          "INR": 990,
+          "AUD": 129,
+          "CAD": 109,
+          "JPY": 10800
+        },
+        "notes": "Annual Apple Music individual plan"
+      },
+      {
+        "planId": "apple-music-family",
+        "planName": "Family Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 16.99,
+          "EUR": 16.99,
+          "GBP": 16.99,
+          "INR": 149,
+          "AUD": 19.99,
+          "CAD": 16.99,
+          "JPY": 1680
+        },
+        "notes": "Up to 6 accounts with personal library"
+      }
+    ]
+  },
+  {
+    "id": "icloud-plus",
+    "serviceName": "iCloud+",
+    "category": "Utilities & Security",
+    "brandColor": "#007AFF",
+    "logoIcon": "HardDrive",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "icloud-50gb",
+        "planName": "50GB Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 0.99,
+          "EUR": 0.99,
+          "GBP": 0.99,
+          "INR": 75,
+          "AUD": 1.49,
+          "CAD": 1.29,
+          "JPY": 130
+        },
+        "notes": "50GB storage, Private Relay & Hide My Email"
+      },
+      {
+        "planId": "icloud-200gb",
+        "planName": "200GB Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 2.99,
+          "EUR": 2.99,
+          "GBP": 2.99,
+          "INR": 219,
+          "AUD": 4.49,
+          "CAD": 3.99,
+          "JPY": 400
+        },
+        "notes": "200GB cloud storage, shareable with family"
+      },
+      {
+        "planId": "icloud-2tb",
+        "planName": "2TB Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 9.99,
+          "EUR": 9.99,
+          "GBP": 8.99,
+          "INR": 749,
+          "AUD": 14.99,
+          "CAD": 12.99,
+          "JPY": 1300
+        },
+        "notes": "2TB cloud storage with HomeKit Secure Video"
+      }
+    ]
+  },
+  {
+    "id": "1password",
+    "serviceName": "1Password",
+    "category": "Utilities & Security",
+    "brandColor": "#0094F5",
+    "logoIcon": "Lock",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "1password-ind-m",
+        "planName": "Individual (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 2.99,
+          "EUR": 2.99,
+          "GBP": 2.5,
+          "INR": 250,
+          "AUD": 4.5,
+          "CAD": 3.99,
+          "JPY": 450
+        },
+        "notes": "Unlimited passwords & 1GB document storage"
+      },
+      {
+        "planId": "1password-ind-y",
+        "planName": "Individual (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 35.88,
+          "EUR": 35.88,
+          "GBP": 29.88,
+          "INR": 2990,
+          "AUD": 53.88,
+          "CAD": 47.88,
+          "JPY": 5400
+        },
+        "notes": "Annual billing for individual user"
+      },
+      {
+        "planId": "1password-fam-m",
+        "planName": "Family Plan 5 Users (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 4.99,
+          "EUR": 4.99,
+          "GBP": 3.99,
+          "INR": 415,
+          "AUD": 7.5,
+          "CAD": 6.5,
+          "JPY": 750
+        },
+        "notes": "5 family members with shared & private vaults"
+      },
+      {
+        "planId": "1password-fam-y",
+        "planName": "Family Plan 5 Users (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 59.88,
+          "EUR": 59.88,
+          "GBP": 47.88,
+          "INR": 4990,
+          "AUD": 89.88,
+          "CAD": 77.88,
+          "JPY": 8900
+        },
+        "notes": "Annual family subscription for 5 accounts"
+      }
+    ]
+  },
+  {
+    "id": "nordvpn",
+    "serviceName": "NordVPN",
+    "category": "Utilities & Security",
+    "brandColor": "#4687FF",
+    "logoIcon": "Shield",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "nordvpn-1m",
+        "planName": "Standard 1-Month Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 12.99,
+          "EUR": 12.99,
+          "GBP": 10.99,
+          "INR": 1080,
+          "AUD": 19.99,
+          "CAD": 17.99,
+          "JPY": 1950
+        },
+        "notes": "Encrypted VPN for up to 10 devices"
+      },
+      {
+        "planId": "nordvpn-1y",
+        "planName": "Standard 1-Year Plan",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 59.88,
+          "EUR": 59.88,
+          "GBP": 51.48,
+          "INR": 4980,
+          "AUD": 89.88,
+          "CAD": 79.88,
+          "JPY": 8900
+        },
+        "notes": "Discounted 1-year VPN protection"
+      },
+      {
+        "planId": "nordvpn-2y",
+        "planName": "Standard 2-Year Plan",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 83.76,
+          "EUR": 83.76,
+          "GBP": 71.76,
+          "INR": 6960,
+          "AUD": 125.76,
+          "CAD": 111.76,
+          "JPY": 12500
+        },
+        "notes": "Best value 2-year VPN subscription"
+      }
+    ]
+  },
+  {
+    "id": "perplexity",
+    "serviceName": "Perplexity AI",
+    "category": "AI & Automation",
+    "brandColor": "#20B2AA",
+    "logoIcon": "Search",
+    "supportsUsageTracking": true,
+    "plans": [
+      {
+        "planId": "perplexity-pro-m",
+        "planName": "Pro Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 20,
+          "EUR": 20,
+          "GBP": 16,
+          "INR": 1700,
+          "AUD": 31,
+          "CAD": 27,
+          "JPY": 3000
+        },
+        "notes": "Pro search with Claude 3.5, GPT-4o & file analysis"
+      },
+      {
+        "planId": "perplexity-pro-y",
+        "planName": "Pro Plan (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 200,
+          "EUR": 200,
+          "GBP": 160,
+          "INR": 17000,
+          "AUD": 310,
+          "CAD": 270,
+          "JPY": 30000
+        },
+        "notes": "Annual Pro subscription ($16.66/mo equivalent)"
+      }
+    ]
+  },
+  {
+    "id": "midjourney",
+    "serviceName": "Midjourney",
+    "category": "AI & Automation",
+    "brandColor": "#3E64FF",
+    "logoIcon": "Image",
+    "supportsUsageTracking": true,
+    "plans": [
+      {
+        "planId": "midjourney-basic",
+        "planName": "Basic Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 10,
+          "EUR": 10,
+          "GBP": 8,
+          "INR": 830,
+          "AUD": 15,
+          "CAD": 13.5,
+          "JPY": 1500
+        },
+        "notes": "3.3 hrs/mo Fast GPU generation time"
+      },
+      {
+        "planId": "midjourney-standard",
+        "planName": "Standard Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 30,
+          "EUR": 30,
+          "GBP": 24,
+          "INR": 2500,
+          "AUD": 46,
+          "CAD": 40,
+          "JPY": 4500
+        },
+        "notes": "15 hrs/mo Fast GPU time + unlimited Relax GPU time"
+      },
+      {
+        "planId": "midjourney-pro",
+        "planName": "Pro Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 60,
+          "EUR": 60,
+          "GBP": 48,
+          "INR": 4980,
+          "AUD": 92,
+          "CAD": 80,
+          "JPY": 9000
+        },
+        "notes": "30 hrs/mo Fast GPU time + stealth mode image generation"
+      }
+    ]
+  },
+  {
+    "id": "canva",
+    "serviceName": "Canva",
+    "category": "Design & Creative",
+    "brandColor": "#00C4CC",
+    "logoIcon": "Layout",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "canva-pro-m",
+        "planName": "Canva Pro (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 14.99,
+          "EUR": 11.99,
+          "GBP": 10.99,
+          "INR": 499,
+          "AUD": 19.99,
+          "CAD": 16.99,
+          "JPY": 1500
+        },
+        "notes": "Premium templates, Brand Kit & AI design tools"
+      },
+      {
+        "planId": "canva-pro-y",
+        "planName": "Canva Pro (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 119.99,
+          "EUR": 109.99,
+          "GBP": 99.99,
+          "INR": 3999,
+          "AUD": 164.99,
+          "CAD": 139.99,
+          "JPY": 12000
+        },
+        "notes": "Annual Canva Pro subscription"
+      },
+      {
+        "planId": "canva-teams-m",
+        "planName": "Canva Teams (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 10,
+          "EUR": 9,
+          "GBP": 8,
+          "INR": 750,
+          "AUD": 13.5,
+          "CAD": 11.5,
+          "JPY": 1200
+        },
+        "notes": "Team collaboration & approval workflows (per user)"
+      }
+    ]
+  },
+  {
+    "id": "dropbox",
+    "serviceName": "Dropbox",
+    "category": "Productivity & Work",
+    "brandColor": "#0061FF",
+    "logoIcon": "Folder",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "dropbox-plus-m",
+        "planName": "Plus 2TB (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 11.99,
+          "EUR": 11.99,
+          "GBP": 9.99,
+          "INR": 990,
+          "AUD": 17.99,
+          "CAD": 14.99,
+          "JPY": 1500
+        },
+        "notes": "2TB storage for 1 user with device sync"
+      },
+      {
+        "planId": "dropbox-plus-y",
+        "planName": "Plus 2TB (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 119.88,
+          "EUR": 119.88,
+          "GBP": 95.88,
+          "INR": 9900,
+          "AUD": 179.88,
+          "CAD": 149.88,
+          "JPY": 14400
+        },
+        "notes": "Annual 2TB cloud storage plan"
+      },
+      {
+        "planId": "dropbox-essentials-m",
+        "planName": "Essentials 3TB (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 22,
+          "EUR": 22,
+          "GBP": 18,
+          "INR": 1850,
+          "AUD": 33,
+          "CAD": 27.5,
+          "JPY": 3300
+        },
+        "notes": "3TB storage + signature & tracking features"
+      }
+    ]
+  },
+  {
+    "id": "slack",
+    "serviceName": "Slack",
+    "category": "Productivity & Work",
+    "brandColor": "#4A154B",
+    "logoIcon": "MessageSquare",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "slack-pro-m",
+        "planName": "Pro Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 8.75,
+          "EUR": 7.5,
+          "GBP": 7,
+          "INR": 725,
+          "AUD": 13.5,
+          "CAD": 11.95,
+          "JPY": 1050
+        },
+        "notes": "Unlimited message history & group huddles"
+      },
+      {
+        "planId": "slack-pro-y",
+        "planName": "Pro Plan (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 87,
+          "EUR": 75,
+          "GBP": 70,
+          "INR": 7250,
+          "AUD": 135,
+          "CAD": 119,
+          "JPY": 10500
+        },
+        "notes": "Annual Pro subscription ($7.25/mo equivalent)"
+      },
+      {
+        "planId": "slack-biz-m",
+        "planName": "Business+ Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 15,
+          "EUR": 14,
+          "GBP": 12.5,
+          "INR": 1250,
+          "AUD": 23,
+          "CAD": 20,
+          "JPY": 1800
+        },
+        "notes": "99.99% uptime SLA & SAML single sign-on"
+      }
+    ]
+  },
+  {
+    "id": "zoom",
+    "serviceName": "Zoom",
+    "category": "Productivity & Work",
+    "brandColor": "#2D8CFF",
+    "logoIcon": "Video",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "zoom-pro-m",
+        "planName": "Workplace Pro (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 13.33,
+          "EUR": 13.99,
+          "GBP": 11.99,
+          "INR": 1100,
+          "AUD": 20.99,
+          "CAD": 18,
+          "JPY": 2000
+        },
+        "notes": "Meetings up to 30 hours + 5GB cloud recording"
+      },
+      {
+        "planId": "zoom-pro-y",
+        "planName": "Workplace Pro (Yearly)",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 133.2,
+          "EUR": 139.9,
+          "GBP": 119.9,
+          "INR": 11000,
+          "AUD": 209.9,
+          "CAD": 179.9,
+          "JPY": 20000
+        },
+        "notes": "Annual Zoom Pro subscription"
+      },
+      {
+        "planId": "zoom-biz-m",
+        "planName": "Business Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 18.33,
+          "EUR": 18.99,
+          "GBP": 15.99,
+          "INR": 1500,
+          "AUD": 28.99,
+          "CAD": 25,
+          "JPY": 2800
+        },
+        "notes": "Meetings up to 300 participants + company branding"
+      }
+    ]
+  },
+  {
+    "id": "apple-tv",
+    "serviceName": "Apple TV+",
+    "category": "Entertainment & Streaming",
+    "brandColor": "#000000",
+    "logoIcon": "Tv",
+    "supportsUsageTracking": false,
+    "plans": [
+      {
+        "planId": "appletv-monthly",
+        "planName": "Monthly Plan",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 9.99,
+          "EUR": 9.99,
+          "GBP": 8.99,
+          "INR": 99,
+          "AUD": 12.99,
+          "CAD": 12.99,
+          "JPY": 900
+        },
+        "notes": "Apple Original series and movies streaming"
+      },
+      {
+        "planId": "appletv-yearly",
+        "planName": "Yearly Plan",
+        "billingCycle": "yearly",
+        "pricing": {
+          "USD": 99,
+          "EUR": 99,
+          "GBP": 89,
+          "INR": 990,
+          "AUD": 129,
+          "CAD": 129,
+          "JPY": 9000
+        },
+        "notes": "Annual pre-paid subscription"
+      }
+    ]
+  },
+  {
+    "id": "vercel",
+    "serviceName": "Vercel",
+    "category": "Developer Tools & Cloud",
+    "brandColor": "#000000",
+    "logoIcon": "Zap",
+    "supportsUsageTracking": true,
+    "plans": [
+      {
+        "planId": "vercel-pro-m",
+        "planName": "Pro Plan (Monthly)",
+        "billingCycle": "monthly",
+        "pricing": {
+          "USD": 20,
+          "EUR": 18.5,
+          "GBP": 16,
+          "INR": 1650,
+          "AUD": 30,
+          "CAD": 27,
+          "JPY": 3000
+        },
+        "notes": "Serverless function execution, preview deployments & analytics"
+      }
+    ]
+  }
+]
