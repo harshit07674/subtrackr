@@ -14,14 +14,21 @@ async function addSubscription(req, res, next) {
 
         const { serviceName, billingCycle, paymentMethod, renewalDate, price, category, currency, notes, status, isFreeTrial, freeTrialEndDate, workSpaceId } = req.body;
 
-        const formatedServiceName = serviceName.trim().toLowerCase()
-        const formatedbillingCycle = billingCycle.trim().toLowerCase()
+        const formatedServiceName = serviceName.trim();
+        const formatedbillingCycle = billingCycle.trim().toLowerCase();
 
-        const subscrptionData = await subscriptionModel.findOne({
+        const escapedServiceName = formatedServiceName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const duplicateCheckQuery = {
             userId: req.user._id,
-            serviceName: formatedServiceName,
+            serviceName: { $regex: new RegExp(`^${escapedServiceName}$`, 'i') },
             billingCycle: formatedbillingCycle
-        })
+        };
+
+        if (workSpaceId) {
+            duplicateCheckQuery.workSpaceId = workSpaceId;
+        }
+
+        const subscrptionData = await subscriptionModel.findOne(duplicateCheckQuery);
 
         if (subscrptionData) {
             return res.status(400).json({
