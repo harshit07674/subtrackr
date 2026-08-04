@@ -174,6 +174,8 @@ export default function SubscriptionModal({ title, initial, workspaces = [], onS
   const [selectedService, setSelectedService] = useState<CatalogService | null>(null);
   const [selectedPlanId, setSelectedPlanId] = useState<string | null>(null);
 
+  const [isCustomName, setIsCustomName] = useState(false);
+
   const filteredCatalog = catalogQuery.trim()
     ? catalogServices.filter(
         (s) =>
@@ -182,14 +184,24 @@ export default function SubscriptionModal({ title, initial, workspaces = [], onS
       )
     : catalogServices;
 
-  const applyPlan = (service: CatalogService, plan: CatalogPlan, targetCurrency?: string) => {
+  const applyPlan = (
+    service: CatalogService,
+    plan: CatalogPlan,
+    targetCurrency?: string,
+    overrideName?: boolean
+  ) => {
     const activeCurrency = targetCurrency || form.currency || userCurrency;
     const priceForCurrency = plan.pricing[activeCurrency] ?? plan.pricing['USD'] ?? 0;
     const currSymbol = plan.pricing[activeCurrency] !== undefined ? activeCurrency : 'USD';
 
+    let defaultName = service.serviceName;
+    if (plan.planName && !plan.planName.toLowerCase().includes('default')) {
+      defaultName = `${service.serviceName} (${plan.planName})`;
+    }
+
     setForm((prev) => ({
       ...prev,
-      serviceName: `${service.serviceName}`,
+      serviceName: !overrideName && isCustomName && prev.serviceName ? prev.serviceName : defaultName,
       category: service.category,
       price: String(priceForCurrency),
       currency: currSymbol,
@@ -204,9 +216,10 @@ export default function SubscriptionModal({ title, initial, workspaces = [], onS
     setSelectedService(service);
     setCatalogQuery(service.serviceName);
     setShowCatalogDropdown(false);
+    setIsCustomName(false);
 
     if (service.plans && service.plans.length > 0) {
-      applyPlan(service, service.plans[0], form.currency || userCurrency);
+      applyPlan(service, service.plans[0], form.currency || userCurrency, true);
     }
   };
 
@@ -235,6 +248,9 @@ export default function SubscriptionModal({ title, initial, workspaces = [], onS
 
   const handle = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, type } = e.target;
+    if (name === 'serviceName') {
+      setIsCustomName(true);
+    }
     if (type === 'checkbox') {
       const checked = (e.target as HTMLInputElement).checked;
       setForm((p) => ({ ...p, [name]: checked }));
