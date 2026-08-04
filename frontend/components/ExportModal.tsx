@@ -24,7 +24,10 @@ export default function ExportModal({ subscriptions, workspaceName, onClose }: E
       const filename = workspaceName
         ? `subtrackr_${workspaceName.toLowerCase().replace(/\s+/g, '_')}_subscriptions.csv`
         : 'subtrackr_all_subscriptions.csv';
-      exportToCSV(subscriptions, filename);
+      const title = workspaceName
+        ? `SubTrackr Workspace Statement - ${workspaceName}`
+        : 'SubTrackr Financial Statement';
+      exportToCSV(subscriptions, filename, title, primaryCurrency);
       toast.success('CSV spreadsheet exported successfully!');
     } catch (err) {
       toast.error('Failed to export CSV file');
@@ -36,7 +39,7 @@ export default function ExportModal({ subscriptions, workspaceName, onClose }: E
   const handleExportPDF = () => {
     setDownloading('pdf');
     try {
-      const title = workspaceName ? `SubTrackr Workspace Statement — ${workspaceName}` : 'SubTrackr Financial Statement';
+      const title = workspaceName ? `SubTrackr Workspace Statement - ${workspaceName}` : 'SubTrackr Financial Statement';
       exportToPDF(subscriptions, title, primaryCurrency);
       toast.success('PDF report generated!');
     } catch (err) {

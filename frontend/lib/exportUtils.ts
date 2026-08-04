@@ -22,8 +22,35 @@ function formatCurrencyAmount(amount: number, currency: string = 'INR'): string 
 /**
  * Flow 5.2: Export subscriptions array to CSV file spreadsheet.
  */
-export function exportToCSV(subscriptions: Subscription[], filename: string = 'subtrackr_subscriptions.csv') {
+export function exportToCSV(
+  subscriptions: Subscription[],
+  filename: string = 'subtrackr_subscriptions.csv',
+  title: string = 'SubTrackr Financial Statement',
+  primaryCurrency: string = 'INR'
+) {
   if (!subscriptions || subscriptions.length === 0) return;
+
+  const totalMonthlySpend = subscriptions.reduce((sum, s) => {
+    let cost = s.price || 0;
+    if (s.billingCycle === 'yearly') cost /= 12;
+    else if (s.billingCycle === 'weekly') cost = (s.price * 52) / 12;
+    else if (s.billingCycle === 'daily') cost *= 30.43;
+    return sum + cost;
+  }, 0);
+
+  const freeTrialsCount = subscriptions.filter((s) => s.isFreeTrial).length;
+  const activeSubsCount = subscriptions.filter((s) => (s.status || 'active') === 'active').length;
+  const generatedDateStr = new Date().toISOString().split('T')[0];
+
+  const summaryRows = [
+    `"Report Title","${title.replace(/"/g, '""')}"`,
+    `"Generated On",="` + generatedDateStr + `"`,
+    `"Est. Monthly Spend",="` + formatCurrencyAmount(totalMonthlySpend, primaryCurrency) + `"`,
+    `"Total Subscriptions",${subscriptions.length}`,
+    `"Active Subscriptions",${activeSubsCount}`,
+    `"Free Trials",${freeTrialsCount}`,
+    '',
+  ];
 
   const headers = [
     'Service Name',
@@ -51,9 +78,10 @@ export function exportToCSV(subscriptions: Subscription[], filename: string = 's
     `"${(sub.notes || '').replace(/"/g, '""')}"`,
   ]);
 
-  const csvContent = [headers.join(','), ...rows.map((row) => row.join(','))].join('\n');
+  const csvContent = [...summaryRows, headers.join(','), ...rows.map((row) => row.join(','))].join('\n');
 
-  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  // Prepend UTF-8 Byte Order Mark (\uFEFF) so Excel opens UTF-8 symbols (₹, €, £, -, etc.) correctly
+  const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.setAttribute('href', url);

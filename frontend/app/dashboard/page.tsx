@@ -1002,7 +1002,7 @@ export default function DashboardPage() {
       )}
       {exportModalOpen && (
         <ExportModal
-          subscriptions={displayed}
+          subscriptions={displayedSubs}
           workspaceName={selectedWorkspaceId !== 'all' ? workspaces.find((w) => w._id === selectedWorkspaceId)?.name : undefined}
           onClose={() => setExportModalOpen(false)}
         />

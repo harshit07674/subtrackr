@@ -50,17 +50,24 @@ export default function CSVImportModal({ onClose, onSuccess }: CSVImportModalPro
       return;
     }
 
-    const header = lines[0].split(',').map((h) => h.trim().toLowerCase().replace(/^["']|["']$/g, ''));
+    // Find header row index (skipping summary metadata lines if present at top of exported CSVs)
+    let headerLineIdx = lines.findIndex((l) => {
+      const tokens = l.toLowerCase().split(',').map((h) => h.trim().replace(/^["']|["']$/g, ''));
+      return tokens.includes('service name') || tokens.includes('servicename') || tokens.includes('service') || tokens.includes('name');
+    });
+    if (headerLineIdx === -1) headerLineIdx = 0;
+
+    const header = lines[headerLineIdx].split(',').map((h) => h.trim().toLowerCase().replace(/^["']|["']$/g, ''));
     
     // Map headers to fields
     const getIndex = (keys: string[]) => header.findIndex((h) => keys.includes(h));
-    const nameIdx = getIndex(['servicename', 'service', 'name', 'subscription']);
+    const nameIdx = getIndex(['servicename', 'service name', 'service', 'name', 'subscription']);
     const priceIdx = getIndex(['price', 'amount', 'cost', 'fee']);
     const categoryIdx = getIndex(['category', 'type']);
     const currencyIdx = getIndex(['currency', 'curr']);
-    const cycleIdx = getIndex(['billingcycle', 'cycle', 'frequency', 'period']);
-    const dateIdx = getIndex(['renewaldate', 'renewal', 'date', 'nextbilling', 'nextdate']);
-    const paymentIdx = getIndex(['paymentmethod', 'payment', 'card', 'method']);
+    const cycleIdx = getIndex(['billingcycle', 'billing cycle', 'cycle', 'frequency', 'period']);
+    const dateIdx = getIndex(['renewaldate', 'renewal date', 'renewal', 'date', 'nextbilling', 'nextdate']);
+    const paymentIdx = getIndex(['paymentmethod', 'payment method', 'payment', 'card', 'method']);
     const notesIdx = getIndex(['notes', 'description', 'memo', 'comment']);
 
     // MANDATORY SUBSCRIPTION FORMAT VALIDATION
@@ -80,7 +87,7 @@ export default function CSVImportModal({ onClose, onSuccess }: CSVImportModalPro
 
     const rows: ParsedSubscription[] = [];
 
-    for (let i = 1; i < lines.length; i++) {
+    for (let i = headerLineIdx + 1; i < lines.length; i++) {
       const cols = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g) || lines[i].split(',');
       const cleanCols = cols.map((c) => c.trim().replace(/^["']|["']$/g, ''));
 
