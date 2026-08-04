@@ -1,8 +1,20 @@
 services:
+  # Backend API Web Service
   - type: web
     name: subtrackr-backend
     env: node
     buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  # Frontend Next.js Web Service
+  - type: web
+    name: subtrackr-frontend
+    env: node
+    rootDir: frontend
+    buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
