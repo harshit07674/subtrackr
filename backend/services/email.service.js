@@ -1,17 +1,27 @@
 import config from "../config/config.js";
-import nodemailer from 'nodemailer'
+import nodemailer from 'nodemailer';
+import dns from 'dns';
 
+// Force Node.js DNS resolution to prioritize IPv4 (prevents ENETUNREACH errors on cloud servers like Render)
+try {
+  dns.setDefaultResultOrder('ipv4first');
+} catch (err) {
+  // Ignore fallback
+}
 
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        type: 'oauth2',
-        user: config.GOOGLE_USER,
-        clientId: config.GOOGLE_CLIENT_ID,
-        clientSecret: config.GOOGLE_CLIENT_SECRET,
-        refreshToken: config.GOOGLE_REFRESH_TOKEN
-    }
-})
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  family: 4, // Force IPv4 socket connection
+  auth: {
+    type: 'oauth2',
+    user: config.GOOGLE_USER,
+    clientId: config.GOOGLE_CLIENT_ID,
+    clientSecret: config.GOOGLE_CLIENT_SECRET,
+    refreshToken: config.GOOGLE_REFRESH_TOKEN,
+  },
+});
 
 transporter.verify((error, success) => {
     if (error) {
