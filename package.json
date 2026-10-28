@@ -4,10 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "build": "echo 'Backend build complete'",
+    "start": "node init && node server.js",
+    "build": "node init && echo 'Backend build complete'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider npx nodemon server.js"
+    "dev": "node init && cross-env NODE_OPTIONS=--openssl-legacy-provider npx nodemon server.js"
   },
   "keywords": [],
   "author": "",
